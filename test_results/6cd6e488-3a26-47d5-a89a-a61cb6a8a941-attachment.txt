@@ -1,0 +1,49 @@
+Метод POST FOR TOKEN
+https://restful-booker.herokuapp.com/auth
+{"token":"751a3d1d25c82a9"}
+Успешно! Статус код = 200
+Все поля присутствуют
+Метод POST FOR CREATE NEW BOOK
+https://restful-booker.herokuapp.com/booking
+{"bookingid":737,"booking":{"firstname":"Pop","lastname":"Brown","totalprice":111,"depositpaid":false,"bookingdates":{"checkin":"2020-01-01","checkout":"2021-01-01"},"additionalneeds":"Breakfast"}}
+Успешно! Статус код = 200
+Все поля присутствуют
+bookingid верен!
+Метод GET AN EXISTING BOOK TO CHECK
+https://restful-booker.herokuapp.com/booking/737
+{"firstname":"Pop","lastname":"Brown","totalprice":111,"depositpaid":false,"bookingdates":{"checkin":"2020-01-01","checkout":"2021-01-01"},"additionalneeds":"Breakfast"}
+Успешно! Статус код = 200
+Все поля присутствуют
+firstname верен!
+МЕТОД PUT
+https://restful-booker.herokuapp.com/booking/737
+{"firstname":"Ol","lastname":"Gree","totalprice":111,"depositpaid":false,"bookingdates":{"checkin":"2021-01-01","checkout":"2023-01-01"},"additionalneeds":"Breakfast"}
+Успешно! Статус код = 200
+Все поля присутствуют
+firstname верен!
+Метод GET AN EXISTING BOOK AFTER PUT
+https://restful-booker.herokuapp.com/booking/737
+{"firstname":"Ol","lastname":"Gree","totalprice":111,"depositpaid":false,"bookingdates":{"checkin":"2021-01-01","checkout":"2023-01-01"},"additionalneeds":"Breakfast"}
+Успешно! Статус код = 200
+Все поля присутствуют
+firstname верен!
+Метод PATCH
+https://restful-booker.herokuapp.com/booking/737
+{"firstname":"Olga","lastname":"Black","totalprice":111,"depositpaid":false,"bookingdates":{"checkin":"2021-01-01","checkout":"2023-01-01"},"additionalneeds":"Breakfast"}
+Успешно! Статус код = 200
+Все поля присутствуют
+lastname верен!
+Метод GET AN EXISTING BOOK AFTER PATCH
+https://restful-booker.herokuapp.com/booking/737
+{"firstname":"Olga","lastname":"Black","totalprice":111,"depositpaid":false,"bookingdates":{"checkin":"2021-01-01","checkout":"2023-01-01"},"additionalneeds":"Breakfast"}
+Успешно! Статус код = 200
+Все поля присутствуют
+lastname верен!
+Метод DELETE
+https://restful-booker.herokuapp.com/booking/737
+Created
+Успешно! Статус код = 201
+Метод GET AN EXISTING BOOK AFTER DELETE
+https://restful-booker.herokuapp.com/booking/737
+Not Found
+Успешно! Статус код = 404
