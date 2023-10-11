@@ -3,4 +3,4 @@ Wrote autotests for the API of the site https://restful-booker.herokuapp.com/, n
 1) Receiving a response from the server
 2) Receiving the code status
 3) Checking the presence and values ​​of fields in the request response
-4) Connected Allure for clearer reporting of autotests
+4) Connected Allure for clearer reporting of autotests, which can be viewed in the test_results folder
